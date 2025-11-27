@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Feedback - BSB Student Feedback Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="bsb-logo.png" alt="BSB Logo" class="logo-img">
+                <span class="logo-text">BSB Feedback Portal</span>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="data.html">Feedback Data</a></li>
+                <li><a href="survey.html" class="active">Submit Feedback</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Student Feedback Survey</h1>
+            <p>Your opinions help us improve - Thank you for your time!</p>
+        </div>
+    </section>
+
+    <!-- Survey Form Section -->
+    <section class="survey-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-intro">
+                    <h2>We Value Your Input</h2>
+                    <p>Please take a few minutes to complete this survey. Your responses are anonymous and will be used to enhance the BSB experience for all students.</p>
+                    <p><strong>Estimated time:</strong> 5-7 minutes</p>
+                </div>
+
+                <div id="form" class="survey-form">
+                    <!-- Personal Information -->
+                    <div class="form-section">
+                        <h3 class="section-title">Personal Information</h3>
+                        
+                        <div class="form-group">
+                            <label for="studentName">Full Name</label>
+                            <input type="text" id="studentName" name="studentName" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="studentEmail">Email Address</label>
+                            <input type="email" id="studentEmail" name="studentEmail" placeholder="your.email@bsb.edu" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="studentId">Student ID</label>
+                            <input type="text" id="studentId" name="studentId" placeholder="BSB-XXXXX" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="program">Program of Study</label>
+                            <select id="program" name="program" required>
+                                <option value="">-- Select Your Program --</option>
+                                <option value="bachelor-analytics">Bachelor in Business Analytics</option>
+                                <option value="bachelor-management">Bachelor in Management</option>
+                                <option value="bachelor-finance">Bachelor in Finance</option>
+                                <option value="master-datascience">Master in Data Science</option>
+                                <option value="master-strategy">Master in Business Strategy</option>
+                                <option value="mba">MBA Program</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="year">Year of Study</label>
+                            <select id="year" name="year" required>
+                                <option value="">-- Select Year --</option>
+                                <option value="1">Year 1</option>
+                                <option value="2">Year 2</option>
+                                <option value="3">Year 3</option>
+                                <option value="4">Year 4</option>
+                                <option value="graduate">Graduate</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Teaching & Learning -->
+                    <div class="form-section">
+                        <h3 class="section-title">Teaching & Learning Experience</h3>
+                        
+                        <div class="form-group">
+                            <label>How would you rate the overall teaching quality?</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="teachingQuality" value="5" required>
+                                    <span>Excellent</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="teachingQuality" value="4">
+                                    <span>Very Good</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="teachingQuality" value="3">
+                                    <span>Good</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="teachingQuality" value="2">
+                                    <span>Fair</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="teachingQuality" value="1">
+                                    <span>Poor</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>How would you rate the course content relevance?</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="courseContent" value="5" required>
+                                    <span>Excellent</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="courseContent" value="4">
+                                    <span>Very Good</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="courseContent" value="3">
+                                    <span>Good</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="courseContent" value="2">
+                                    <span>Fair</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="courseContent" value="1">
+                                    <span>Poor</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Which teaching methods are most effective for you? (Select all that apply)</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="teachingMethods" value="lectures">
+                                    <span>Lectures</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="teachingMethods" value="discussions">
+                                    <span>Group Discussions</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="teachingMethods" value="case-studies">
+                                    <span>Case Studies</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="teachingMethods" value="projects">
+                                    <span>Projects</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="teachingMethods" value="presentations">
+                                    <span>Presentations</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="teachingMethods" value="online">
+                                    <span>Online Learning</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Facilities & Resources -->
+                    <div class="form-section">
+                        <h3 class="section-title">Facilities & Resources</h3>
+                        
+                        <div class="form-group">
+                            <label>How would you rate the library resources?</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="library" value="5" required>
+                                    <span>Excellent</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="library" value="4">
+                                    <span>Very Good</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="library" value="3">
+                                    <span>Good</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="library" value="2">
+                                    <span>Fair</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="library" value="1">
+                                    <span>Poor</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>How would you rate the computer labs and technology?</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="technology" value="5" required>
+                                    <span>Excellent</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="technology" value="4">
+                                    <span>Very Good</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="technology" value="3">
+                                    <span>Good</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="technology" value="2">
+                                    <span>Fair</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="technology" value="1">
+                                    <span>Poor</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Which facilities need improvement? (Select all that apply)</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="improvements" value="classrooms">
+                                    <span>Classrooms</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="improvements" value="library">
+                                    <span>Library</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="improvements" value="labs">
+                                    <span>Computer Labs</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="improvements" value="cafeteria">
+                                    <span>Cafeteria</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="improvements" value="sports">
+                                    <span>Sports Facilities</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="improvements" value="wifi">
+                                    <span>WiFi Coverage</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Student Support -->
+                    <div class="form-section">
+                        <h3 class="section-title">Student Support Services</h3>
+                        
+                        <div class="form-group">
+                            <label>How satisfied are you with academic advising?</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="advising" value="5" required>
+                                    <span>Very Satisfied</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="advising" value="4">
+                                    <span>Satisfied</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="advising" value="3">
+                                    <span>Neutral</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="advising" value="2">
+                                    <span>Dissatisfied</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="advising" value="1">
+                                    <span>Very Dissatisfied</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Which support services have you used? (Select all that apply)</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="services" value="career">
+                                    <span>Career Services</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="services" value="counseling">
+                                    <span>Counseling</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="services" value="tutoring">
+                                    <span>Tutoring</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="services" value="health">
+                                    <span>Health Services</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="services" value="international">
+                                    <span>International Student Support</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="services" value="financial">
+                                    <span>Financial Aid</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Overall Experience -->
+                    <div class="form-section">
+                        <h3 class="section-title">Overall Experience</h3>
+                        
+                        <div class="form-group">
+                            <label for="satisfaction">Overall, how satisfied are you with your experience at BSB?</label>
+                            <select id="satisfaction" name="satisfaction" required>
+                                <option value="">-- Select --</option>
+                                <option value="5">Very Satisfied</option>
+                                <option value="4">Satisfied</option>
+                                <option value="3">Neutral</option>
+                                <option value="2">Dissatisfied</option>
+                                <option value="1">Very Dissatisfied</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="recommend">How likely are you to recommend BSB to others?</label>
+                            <select id="recommend" name="recommend" required>
+                                <option value="">-- Select --</option>
+                                <option value="10">10 - Extremely Likely</option>
+                                <option value="9">9</option>
+                                <option value="8">8</option>
+                                <option value="7">7</option>
+                                <option value="6">6</option>
+                                <option value="5">5 - Neutral</option>
+                                <option value="4">4</option>
+                                <option value="3">3</option>
+                                <option value="2">2</option>
+                                <option value="1">1</option>
+                                <option value="0">0 - Not at All Likely</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comments">Additional Comments and Suggestions</label>
+                            <textarea id="comments" name="comments" rows="6" placeholder="Please share any additional thoughts, suggestions, or concerns..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-primary btn-submit" id="submitBtn">Submit Feedback</button>
+                        <button type="button" class="btn btn-secondary">Clear Form</button>
+                    </div>
+                </div>
+
+                <!-- Success Message (hidden by default) -->
+                <div id="successMessage" class="success-message" style="display: none;">
+                    <div class="success-icon">✓</div>
+                    <h3>Thank You!</h3>
+                    <p>Your feedback has been successfully submitted. We appreciate your time and input in helping us improve BSB.</p>
+                    <button type="button" class="btn btn-primary" onclick="location.reload()">Submit Another Response</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>BSB Feedback Portal</h4>
+                    <p>Empowering students through open communication and continuous improvement.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="survey.html">Submit Feedback</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: feedback@bsb.edu</p>
+                    <p>Phone: +33 3 80 72 59 00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Burgundy School of Business. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Data - BSB Student Feedback Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="bsb-logo.png" alt="BSB Logo" class="logo-img">
+                <span class="logo-text">BSB Feedback Portal</span>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="data.html" class="active">Feedback Data</a></li>
+                <li><a href="survey.html">Submit Feedback</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Feedback Analytics Dashboard</h1>
+            <p>Comprehensive Overview of Student Feedback Data</p>
+        </div>
+    </section>
+
+    <!-- Data Content -->
+    <section class="data-section">
+        <div class="container">
+            <!-- Overall Satisfaction Table -->
+            <div class="data-card">
+                <h2>Overall Satisfaction Ratings (2024-2025)</h2>
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Q1 2024</th>
+                                <th>Q2 2024</th>
+                                <th>Q3 2024</th>
+                                <th>Q4 2024</th>
+                                <th>Trend</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Teaching Quality</td>
+                                <td>4.5</td>
+                                <td>4.6</td>
+                                <td>4.7</td>
+                                <td>4.8</td>
+                                <td class="trend-up">↑ 6.7%</td>
+                            </tr>
+                            <tr>
+                                <td>Course Content</td>
+                                <td>4.3</td>
+                                <td>4.4</td>
+                                <td>4.5</td>
+                                <td>4.6</td>
+                                <td class="trend-up">↑ 7.0%</td>
+                            </tr>
+                            <tr>
+                                <td>Campus Facilities</td>
+                                <td>4.2</td>
+                                <td>4.3</td>
+                                <td>4.4</td>
+                                <td>4.5</td>
+                                <td class="trend-up">↑ 7.1%</td>
+                            </tr>
+                            <tr>
+                                <td>Library Resources</td>
+                                <td>4.4</td>
+                                <td>4.5</td>
+                                <td>4.6</td>
+                                <td>4.7</td>
+                                <td class="trend-up">↑ 6.8%</td>
+                            </tr>
+                            <tr>
+                                <td>Student Support Services</td>
+                                <td>4.1</td>
+                                <td>4.3</td>
+                                <td>4.4</td>
+                                <td>4.5</td>
+                                <td class="trend-up">↑ 9.8%</td>
+                            </tr>
+                            <tr>
+                                <td>Technology Infrastructure</td>
+                                <td>4.0</td>
+                                <td>4.2</td>
+                                <td>4.4</td>
+                                <td>4.6</td>
+                                <td class="trend-up">↑ 15.0%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="table-note">*Ratings on a scale of 1-5, where 5 is excellent</p>
+            </div>
+
+            <!-- Feedback Submission Statistics -->
+            <div class="data-card">
+                <h2>Feedback Submission Statistics by Program</h2>
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Program</th>
+                                <th>Total Students</th>
+                                <th>Responses</th>
+                                <th>Response Rate</th>
+                                <th>Avg. Satisfaction</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bachelor in Business Analytics</td>
+                                <td>320</td>
+                                <td>305</td>
+                                <td>95.3%</td>
+                                <td>4.7/5</td>
+                            </tr>
+                            <tr>
+                                <td>Bachelor in Management</td>
+                                <td>450</td>
+                                <td>428</td>
+                                <td>95.1%</td>
+                                <td>4.6/5</td>
+                            </tr>
+                            <tr>
+                                <td>Bachelor in Finance</td>
+                                <td>280</td>
+                                <td>265</td>
+                                <td>94.6%</td>
+                                <td>4.5/5</td>
+                            </tr>
+                            <tr>
+                                <td>Master in Data Science</td>
+                                <td>180</td>
+                                <td>174</td>
+                                <td>96.7%</td>
+                                <td>4.8/5</td>
+                            </tr>
+                            <tr>
+                                <td>Master in Business Strategy</td>
+                                <td>210</td>
+                                <td>198</td>
+                                <td>94.3%</td>
+                                <td>4.6/5</td>
+                            </tr>
+                            <tr>
+                                <td>MBA Program</td>
+                                <td>150</td>
+                                <td>147</td>
+                                <td>98.0%</td>
+                                <td>4.9/5</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr class="table-total">
+                                <td><strong>Total</strong></td>
+                                <td><strong>1,590</strong></td>
+                                <td><strong>1,517</strong></td>
+                                <td><strong>95.4%</strong></td>
+                                <td><strong>4.7/5</strong></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Top Improvement Areas -->
+            <div class="data-card">
+                <h2>Top Requested Improvements</h2>
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Improvement Area</th>
+                                <th>Mentions</th>
+                                <th>Priority Level</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Extended Library Hours</td>
+                                <td>342</td>
+                                <td><span class="badge badge-high">High</span></td>
+                                <td><span class="badge badge-completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>More Charging Stations</td>
+                                <td>298</td>
+                                <td><span class="badge badge-high">High</span></td>
+                                <td><span class="badge badge-progress">In Progress</span></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Career Development Workshops</td>
+                                <td>256</td>
+                                <td><span class="badge badge-medium">Medium</span></td>
+                                <td><span class="badge badge-completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Updated Lab Equipment</td>
+                                <td>234</td>
+                                <td><span class="badge badge-high">High</span></td>
+                                <td><span class="badge badge-progress">In Progress</span></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>More Study Spaces</td>
+                                <td>221</td>
+                                <td><span class="badge badge-medium">Medium</span></td>
+                                <td><span class="badge badge-planned">Planned</span></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Healthier Cafeteria Options</td>
+                                <td>198</td>
+                                <td><span class="badge badge-medium">Medium</span></td>
+                                <td><span class="badge badge-completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Better WiFi Coverage</td>
+                                <td>187</td>
+                                <td><span class="badge badge-high">High</span></td>
+                                <td><span class="badge badge-completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Mental Health Support</td>
+                                <td>176</td>
+                                <td><span class="badge badge-high">High</span></td>
+                                <td><span class="badge badge-progress">In Progress</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Monthly Response Trends -->
+            <div class="data-card">
+                <h2>Monthly Feedback Trends (Last 6 Months)</h2>
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Month</th>
+                                <th>Submissions</th>
+                                <th>Positive (%)</th>
+                                <th>Neutral (%)</th>
+                                <th>Negative (%)</th>
+                                <th>Avg. Response Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>June 2024</td>
+                                <td>245</td>
+                                <td>78%</td>
+                                <td>18%</td>
+                                <td>4%</td>
+                                <td>2 days</td>
+                            </tr>
+                            <tr>
+                                <td>July 2024</td>
+                                <td>198</td>
+                                <td>75%</td>
+                                <td>20%</td>
+                                <td>5%</td>
+                                <td>2 days</td>
+                            </tr>
+                            <tr>
+                                <td>August 2024</td>
+                                <td>312</td>
+                                <td>82%</td>
+                                <td>15%</td>
+                                <td>3%</td>
+                                <td>1 day</td>
+                            </tr>
+                            <tr>
+                                <td>September 2024</td>
+                                <td>428</td>
+                                <td>85%</td>
+                                <td>12%</td>
+                                <td>3%</td>
+                                <td>1 day</td>
+                            </tr>
+                            <tr>
+                                <td>October 2024</td>
+                                <td>395</td>
+                                <td>83%</td>
+                                <td>14%</td>
+                                <td>3%</td>
+                                <td>1 day</td>
+                            </tr>
+                            <tr>
+                                <td>November 2024</td>
+                                <td>372</td>
+                                <td>86%</td>
+                                <td>11%</td>
+                                <td>3%</td>
+                                <td>1 day</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Summary Insights -->
+            <div class="insights-section">
+                <h2>Key Insights</h2>
+                <div class="insights-grid">
+                    <div class="insight-card">
+                        <h3>📈 Positive Trend</h3>
+                        <p>Overall satisfaction has increased by 12% over the past year, with significant improvements in technology infrastructure and student support services.</p>
+                    </div>
+                    <div class="insight-card">
+                        <h3>🎯 High Engagement</h3>
+                        <p>With a 95.4% response rate, BSB students are highly engaged in providing feedback, demonstrating strong commitment to institutional improvement.</p>
+                    </div>
+                    <div class="insight-card">
+                        <h3>✅ Action Results</h3>
+                        <p>65% of top requested improvements have been completed or are in progress, showing responsive action to student concerns.</p>
+                    </div>
+                    <div class="insight-card">
+                        <h3>⚡ Quick Response</h3>
+                        <p>Average response time to feedback has improved to just 1 day, ensuring students receive timely acknowledgment of their input.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>BSB Feedback Portal</h4>
+                    <p>Empowering students through open communication and continuous improvement.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="survey.html">Submit Feedback</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: feedback@bsb.edu</p>
+                    <p>Phone: +33 3 80 72 59 00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Burgundy School of Business. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

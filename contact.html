@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - BSB Student Feedback Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="bsb-logo.png" alt="BSB Logo" class="logo-img">
+                <span class="logo-text">BSB Feedback Portal</span>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="data.html">Feedback Data</a></li>
+                <li><a href="survey.html">Submit Feedback</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We're Here to Help - Get in Touch</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Have questions about the feedback system? Need technical support? Want to follow up on your submission? We're here to help!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>feedback@bsb.edu</p>
+                                <p class="small-text">Response time: Within 24 hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>+33 3 80 72 59 00</p>
+                                <p class="small-text">Mon-Fri: 9:00 AM - 5:00 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-text">
+                                <h4>Office Location</h4>
+                                <p>Student Services Center</p>
+                                <p>Building A, Room 205</p>
+                                <p>BSB Campus, Dijon, France</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">🕐</div>
+                            <div class="contact-text">
+                                <h4>Office Hours</h4>
+                                <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                                <p>Saturday: 10:00 AM - 2:00 PM</p>
+                                <p>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">Facebook</a>
+                            <a href="#" class="social-icon">Twitter</a>
+                            <a href="#" class="social-icon">LinkedIn</a>
+                            <a href="#" class="social-icon">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Send Us a Message</h2>
+                    <div class="quick-contact-form">
+                        <div class="form-group">
+                            <label for="contactName">Your Name</label>
+                            <input type="text" id="contactName" name="contactName" placeholder="John Doe" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address</label>
+                            <input type="email" id="contactEmail" name="contactEmail" placeholder="john.doe@bsb.edu" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">-- Select Subject --</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="followup">Follow-up on Feedback</option>
+                                <option value="suggestion">Suggestion</option>
+                                <option value="complaint">Complaint</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
+                        </div>
+                        
+                        <button type="button" class="btn btn-primary">Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Department Contacts -->
+    <section class="departments-section">
+        <div class="container">
+            <h2 class="section-title">Department Contacts</h2>
+            <div class="departments-grid">
+                <div class="department-card">
+                    <h3>Student Affairs</h3>
+                    <p><strong>Director:</strong> Dr. Marie Dubois</p>
+                    <p><strong>Email:</strong> student.affairs@bsb.edu</p>
+                    <p><strong>Ext:</strong> 1234</p>
+                </div>
+                
+                <div class="department-card">
+                    <h3>Academic Services</h3>
+                    <p><strong>Director:</strong> Prof. Jean Laurent</p>
+                    <p><strong>Email:</strong> academic.services@bsb.edu</p>
+                    <p><strong>Ext:</strong> 1235</p>
+                </div>
+                
+                <div class="department-card">
+                    <h3>IT Support</h3>
+                    <p><strong>Manager:</strong> Thomas Martin</p>
+                    <p><strong>Email:</strong> it.support@bsb.edu</p>
+                    <p><strong>Ext:</strong> 1236</p>
+                </div>
+                
+                <div class="department-card">
+                    <h3>Facilities Management</h3>
+                    <p><strong>Manager:</strong> Sophie Bernard</p>
+                    <p><strong>Email:</strong> facilities@bsb.edu</p>
+                    <p><strong>Ext:</strong> 1237</p>
+                </div>
+                
+                <div class="department-card">
+                    <h3>Career Services</h3>
+                    <p><strong>Director:</strong> Claire Rousseau</p>
+                    <p><strong>Email:</strong> career.services@bsb.edu</p>
+                    <p><strong>Ext:</strong> 1238</p>
+                </div>
+                
+                <div class="department-card">
+                    <h3>International Office</h3>
+                    <p><strong>Coordinator:</strong> Pierre Moreau</p>
+                    <p><strong>Email:</strong> international@bsb.edu</p>
+                    <p><strong>Ext:</strong> 1239</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Find Us</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.987654321098!2d5.041479!3d47.322047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDE5JzE5LjQiTiA1wrAwMicyOS4zIkU!5e0!3m2!1sen!2sfr!4v1234567890123!5m2!1sen!2sfr"
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="map-info">
+                <h3>Burgundy School of Business</h3>
+                <p>29 Rue Sambin, 21000 Dijon, France</p>
+                <p><strong>Parking:</strong> Available on campus for visitors</p>
+                <p><strong>Public Transport:</strong> Bus lines 5, 12, and 18 stop near campus</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How long does it take to get a response?</h4>
+                    <p>We typically respond to all inquiries within 24-48 hours during business days. Urgent matters are prioritized.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Is my feedback anonymous?</h4>
+                    <p>Yes, survey responses are anonymous. However, if you contact us directly, your identity will be known to respond appropriately.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Can I track my feedback submission?</h4>
+                    <p>Yes, you'll receive a confirmation email with a tracking number. Contact us with this number for updates.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Who reviews the feedback?</h4>
+                    <p>A dedicated team from Student Affairs, Academic Services, and relevant departments reviews all feedback regularly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>BSB Feedback Portal</h4>
+                    <p>Empowering students through open communication and continuous improvement.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="survey.html">Submit Feedback</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: feedback@bsb.edu</p>
+                    <p>Phone: +33 3 80 72 59 00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Burgundy School of Business. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
